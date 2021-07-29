@@ -43,7 +43,7 @@ public class FlutterFGBGPlugin implements FlutterPlugin, ActivityAware, Lifecycl
   // depending on the user's project. onAttachedToEngine or registerWith must both be defined
   // in the same class.
   public static void registerWith(Registrar registrar) {
-    new EventChannel(registrar.messenger(), "com.ajinasokan.appfocus/events")
+    new EventChannel(registrar.messenger(), "com.ajinasokan.flutter_fgbg/events")
             .setStreamHandler(new FlutterFGBGPlugin());
   }
 
